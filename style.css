@@ -1,0 +1,31 @@
+/*basic*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*header*/
+
+header {
+  background-color: #F48B29;
+  box-shadow: 0px 2px 5px black;
+}
+
+@media screen and (min-width:960px) {
+  .nav-items {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.logo-img {
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+}
+
+.logo-txt {
+  display: inline-block;
+  text-align:justify;
+  vertical-align: middle;
+}
