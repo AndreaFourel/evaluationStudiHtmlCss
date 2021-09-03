@@ -1,14 +1,54 @@
 /*basic*/
+
 * {
   margin: 0;
   padding: 0;
+  font-family:'Krub', sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: #F0C929;
+  font-weight:900;
+}
+
+b{
+  font-weight:900px;
+  font-size: 1.2em;
+}
+
+h1{
+  font-family: 'KoHo', sans-serif;
+  color:#F48B29;
+  font-size: 2.2em;
+  margin: 0;
+}
+
+.da-subtitle {
+  color: #F0C929;
+}
+
+h2, h3 {
+  font-family: 'KoHo', sans-serif;
+  margin-top: 1%;
+  margin-bottom: 5%;
+  color:#F0C929;
+  font-size: 1.8em;
+}
+
+
+body {
+  background-color:#FBE6C2;
+}
+
+p{
+  margin: 0;
+}
 /*header*/
 
 header {
   background-color: #F48B29;
-  box-shadow: 0px 2px 5px black;
+  /*box-shadow: 0px 2px 5px black;*/
 }
 
 @media screen and (min-width:960px) {
@@ -28,4 +68,96 @@ header {
   display: inline-block;
   text-align:justify;
   vertical-align: middle;
+  font-family: 'KoHo', sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #AC0D0D;
+  line-height: 1.2em;
 }
+
+.logo {
+  border-radius: 50%;
+  box-shadow: 0px 2px 5px black;  
+}
+
+.orange-line{
+  width: 100%;
+  height: 7px;
+  background-color:#F48B29;
+}
+
+.red-line {
+  width: 100%;
+  height: 5px;
+  background-color: #AC0D0D;
+}
+
+
+/*main*/
+
+section {
+  margin-bottom: 5%;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.absolute-position-img {
+  position:absolute;
+  top: 50%;
+  left: 15%;
+  width: 85%;
+  z-index: 1;
+  border-radius: 50% 0 0 0;
+  box-shadow: 2px 2px 5px black;
+}
+
+.zigzag-img {
+  position: absolute;
+  left: 40%;
+  width: 60%;
+}
+
+.img-1 {
+  width: 40%;
+  box-shadow: 2px 2px 5px black;
+}
+
+.dual-img{
+  position: relative;
+  margin: 5%;
+}
+
+.presentation-img {
+  display: block;
+  margin: auto;
+  border-radius: 50% 50% 0 0;
+  width: 60%;
+  box-shadow: 0px 2px 5px black;
+}
+
+.fond {
+  padding: 2%;
+  background-image: url('resources/fond.png');
+  background-size: cover;
+  box-shadow: 0px 2px 5px black;
+}
+
+.top-margin {
+  margin-top: 35%;
+}
+
+.text-block {
+  font-size: 1em;
+  line-height: 1.7em;
+  background-color: #AC0D0D;
+  color:#FBE6C2;
+  margin-bottom: 5%;
+  padding: 1.5em;
+  box-shadow: 0px 2px 5px black;
+  text-align: left;
+}
+
+/*footer*/
