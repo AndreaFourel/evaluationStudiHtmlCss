@@ -36,38 +36,35 @@ h2, h3 {
   font-size: 1.8em;
 }
 
+html {
+  background-color: #FBE6C2;
+}
 
 body {
   background-color:#FBE6C2;
+  max-width: 1400px;
+  min-width: 357px;
+  margin: auto;
 }
 
 p{
   margin: 0;
 }
+
 /*header*/
 
 header {
   background-color: #F48B29;
-  /*box-shadow: 0px 2px 5px black;*/
 }
 
-@media screen and (min-width:960px) {
-  .nav-items {
-    display: flex;
-    justify-content: flex-end;
-  }
-}
-
-.logo-img {
+.logo{
   border-radius: 50%;
   width: 130px;
   height: 130px;
+  box-shadow: 0px 2px 4px black;  
 }
 
 .logo-txt {
-  display: inline-block;
-  text-align:justify;
-  vertical-align: middle;
   font-family: 'KoHo', sans-serif;
   font-weight: bold;
   font-size: 1.5em;
@@ -75,10 +72,6 @@ header {
   line-height: 1.2em;
 }
 
-.logo {
-  border-radius: 50%;
-  box-shadow: 0px 2px 5px black;  
-}
 
 .orange-line{
   width: 100%;
@@ -92,6 +85,37 @@ header {
   background-color: #AC0D0D;
 }
 
+/*header menu*/
+
+.nav-link {
+  color: #AC0D0D;
+  margin: 0.5em;
+  padding: 0.5em;
+  font-family: 'KoHo', sans-serif;
+  font-size: 1.2em;
+}
+
+.nav-link:hover{
+  color:#F0C929
+}
+
+
+.fa-bars {
+  color: #AC0D0D;
+  background-color: #F48B29;
+}
+
+.navbar-toggler{
+  box-shadow: 0px 1px 1px black; 
+}
+
+.nav-items{
+  justify-content: end;
+}
+
+.nav-items .active {
+  color:#F0C929;
+}
 
 /*main*/
 
@@ -111,7 +135,7 @@ ul {
   width: 85%;
   z-index: 1;
   border-radius: 50% 0 0 0;
-  box-shadow: 2px 2px 5px black;
+  box-shadow: 1px 2px 4px black;
 }
 
 .zigzag-img {
@@ -122,7 +146,7 @@ ul {
 
 .img-1 {
   width: 40%;
-  box-shadow: 2px 2px 5px black;
+  box-shadow: 1px 2px 4px black;
 }
 
 .dual-img{
@@ -135,14 +159,14 @@ ul {
   margin: auto;
   border-radius: 50% 50% 0 0;
   width: 60%;
-  box-shadow: 0px 2px 5px black;
+  box-shadow: 1px 2px 4px black;
 }
 
 .fond {
   padding: 2%;
   background-image: url('resources/fond.png');
   background-size: cover;
-  box-shadow: 0px 2px 5px black;
+  box-shadow: 1px 2px 4px black;
 }
 
 .top-margin {
@@ -156,8 +180,8 @@ ul {
   color:#FBE6C2;
   margin-bottom: 5%;
   padding: 1.5em;
-  box-shadow: 0px 2px 5px black;
+  box-shadow: 1px 2px 4px black;
   text-align: left;
-}
+
 
 /*footer*/
