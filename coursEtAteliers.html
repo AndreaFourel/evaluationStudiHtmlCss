@@ -4,13 +4,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/bab83bcab2.js" crossorigin="anonymous"></script>
   <title>Nos cours et Atéliers</title>
 </head>
 <body>
-  <header>
+  <header id="header">
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <a href="index.html" class="navbar-brand d-flex align-items-center">
@@ -26,7 +28,7 @@
               <a href="index.html" class="nav-link">Présentation</a>
             </li>
             <li class="nav-item">
-              <a href="coursEtAteliers.html" class="nav-link active" aria-current="page">Nos cours et Atéliers</a>
+              <a href="coursEtAteliers.html" class="nav-link active" aria-current="page">Nos cours et atéliers</a>
             </li>
             <li class="nav-item">
               <a href="actualites.html" class="nav-link">Actualités</a>
@@ -42,7 +44,153 @@
     <div class="orange-line"></div>
   </header>
   <main>
-
+    <button class="up-btn">  
+      <a href="#header">
+        <img src="resources/curved-arrow.png" alt="" style="width:30px; height:30px" title="Retour au début de la page"> 
+      </a>
+    </button>
+    <section class="title-block">
+      <div class="text-block">
+        <h1 class="smaller-h1">Nos cours et atéliers</h1>
+        <br>
+        <p><strong class="not-bold">Djenkafo Art</strong> vous propose divers <strong class="not-bold">cours et atéliers autour des traditions africaines</strong>.</p> 
+        <p>Rejoignez-nous et decouvrez le <a href="#ngoni"><strong class="not-bold">n'goni</strong></a>, le<a href="#djembé"><strong class="not-bold"> djembé</strong></a>, 
+          la <a href="#danse-afric"><strong class="not-bold">danse africaine</strong></a>, le <a href="#bogolan"><strong class="not-bold">bogolan</strong></a> et les 
+          <a href="#conte"><strong class="not-bold">contes de la tradition orale africaine</strong></a>.</p>
+      </div>
+      <div>
+        <img class="title-img" src="resources/Calebasse.jpeg" alt="">
+      </div>
+    </section>
+    <section class="classes" id="ngoni">
+      <article class="text-block">
+        <h2>Le N'Goni ou harpe-luth africaine</h2>
+        <p><strong class="not-bold">Le N'goni est un instrument traditionnel de l’Afrique de l’Ouest</strong>. On le trouve au Mali, au Niger, au Burkina Faso, 
+          au Sénégal… Il est proche de la <strong class="not-bold">Kora</strong>.</p>
+        <p>Le N'goni est composé d’une grosse calebasse évidée qui va servir de caisse de résonance, recouverte d’ une peau de chèvre. 
+          Cette calebasse est traversée par un manche en bois à l’extrémité duquel seront fixées les cordes en nylon. Ces dernières, seront 
+          tendues grâce à un système de tension fait d'un tressage de corde ou de peau ou grâce à des mécaniques modernes. Un chevalet repose 
+          sur la peau. Cette alchimie donne le son si particulier du N’Goni, à la fois doux et feutré.</p>
+      </article>
+      <div>
+        <img class="classes-img" src="resources/Ngoni.jpg" alt="">
+      </div>
+      <div class="text-block">
+        <h3 class="classes-title">Cours de N'goni</h3>
+        <ul>
+          <h4 class="classes-price">Tarif au cours:</h4>
+          <li>Cours Adulte: 20€/heure</li>
+          <li>Cours Enfant (- de 15 ans): 15€/heure</li>
+          <li>+ adhésion annuelle: 10€</li>
+        </ul>
+        <ul>
+          <h4 class="classes-price">Tarif à l'année (1 heure de cours par semaine):</h4>
+          <li>Adulte: 340€</li>
+          <li>Enfant (- de 15 ans): 250€</li>
+          <li>+ adhésion annuelle: 10€</li>
+        </ul>
+        <p>L'instrument est prêté pendant le cours, possibilité d'en acheter un.</p>
+      </div>
+    </section>
+    <section class="classes" id="djembé">
+      <article class="djembe text-block">
+        <h2>Le Djembé</h2>
+        <p><strong class="not-bold">Le djembé, instrument de percussion africain</strong>, est originaire d’Afrique de l’ouest, plus particulièrement du pays Mandingue. 
+          On le retrouve au Burkina Faso, en Côte d’Ivoire, en Guinée, au Mali, et au Sénégal.</p>
+        <p>Dans ces régions, le djembé anime nombre de fêtes populaires tels que mariages, baptêmes, etc. Il est également utilisé par les troupes et 
+          ballets africains.</p>
+        <p>Aujourd’hui, la pratique du djembé s’étend au monde entier.</p>
+      </article>
+      <div>
+        <img class="classes-img" src="resources/djembé.jpg" alt="">
+      </div>
+      <div class="text-block">
+        <h3 class="classes-title">Cours de djembé</h3>
+        <ul>
+          <p><em>Cours en collectif pour adultes et enfants les mardis de 18h15 à 19h15 au centre culturel des Carmes.</em></p>
+          <h4 class="classes-price">Tarif à l'année (1 heure de cours par semaine):</h4>
+          <li>Adulte et enfant: 221€</li>
+          <li>+ adhésion annuelle: 10€</li>
+        </ul>
+        <p>Les instruments sont prêtés pendant les cours, possibilité d'en acheter un.</p>
+      </div>
+    </section>
+    <section class="classes" id="danse-afric">
+      <article class="danse text-block">
+        <h2>La danse africaine</h2>
+        <p>Il y a plusieurs sortes de <strong class="not-bold">danses africaines</strong>. Ces danses ont toutes un contexte géographique, historique et social différent. 
+          Elles servent à exprimer chaque étape dans la vie d'un homme africain. Elles sont pratiquées par des hommes, des femmes ou même des enfants qui 
+          dansent au rythme du djembé. Traditionnellement, ces danses sont effectuées lors des mariages, des fêtes et de célébrations.</p>
+        <p>La danse africaine est une danse ludique et vivifiante. Elle est un superbe exercice pour le corp et permet de libérer l'esprit. La danse africaine 
+          est un bon moyen pour éliminer le stress et de renforcer la confiance en soi.</p>
+      </article>
+      <div>
+        <img class="classes-img" src="resources/danse.jpg" alt="">
+      </div>
+      <div class="text-block">
+        <h3 class="classes-title">Cours de danse africaine</h3>
+        <ul>
+          <p><em>Cours en collectif pour enfants les vendredis de 18h15 à 19h15 au centre culturel des Carmes.</em></p>
+          <h4 class="classes-price">Tarif à l'année (1 heure de cours par semaine):</h4>
+          <li>Enfant (- de 15 ans): 150€</li>
+          <li>Famille: 135€/enfant</li>
+          <li>+ adhésion annuelle: 10€</li>
+        </ul>
+        <ul>
+          <p><em>Cours en collectif pour adultes les vendredis de 18h30 à 19h30 au centre culturel des Carmes.</em></p>
+          <h4 class="classes-price">Tarif à l'année (1 heure de cours par semaine):</h4>
+          <li>Adulte: 300€</li>
+          <li>Famille: 285€/personne</li>
+          <li>+ adhésion annuelle: 10€</li>
+        </ul>
+        <p>Les cours de danse africaine sont accopagnés par des musiciens professionnels et par les éléves du cours de djembé.</p>
+      </div>
+    </section>
+    <section class="classes" id="bogolan">
+      <article class="bogolan text-block">
+        <h2>Le Bogolan</h2>
+        <p><strong class="not-bold">Bogolan</strong> : Bogo qui veux dire Terre et Lan veux dire mettre.</p>
+        <p><strong class="not-bold">Le bogolan, méthode de teinture à l'argile, à base de végétaux naturels, est un art très ancien utilisé par les bamanas, une ethnie du Mali, 
+          pour décorer des étoffes de coton tissé.</strong> C'est une forme d'art vivant, qui ne cesse d'évoluer au gré des préoccupations et des sources 
+          d'inspiration de chacun.</p>
+        <p>Les spécialistes supposent que la technique complexe du Bogolan est pratiquée dans le Soudan Occidentale depuis des siècles.</p>
+        <p>A l'époque, pour les Bamanas, le Bogolan jouait un rôle dans les étapes marquantes de la vie : mariage, naissance et decès. D'autres le choisissaient 
+          pour des raisons purement esthétiques.</p>
+        <p>De nos jours, le Bogolan s'est développé grâce à la réadaptation artistique de la pratique dans toute l'Afrique. Et maintenant, partout dans le monde.</p>
+      </article>
+      <div>
+        <img class="classes-img" src="resources/Bogolan.jpeg" alt="">
+      </div>
+      <div class="text-block">
+        <ul>
+          <p><h3 class="classes-title">Atelier de Bogolan</h3></p>
+          <p>Les ateliers sont organisés sur des séances de 6 semaines à raison de 2 heures de cours hebdomadaires.</p>
+          <h4 class="classes-price">Tarif pour les 6 semaines:</h4>
+          <li>Par personne: 120€</li>
+          <li>En famille,à partir de 2 personnes: 100€/personne</li>
+          <li>+ adhésion annuelle: 10€</li>
+        </ul>
+    </div> 
+  </section> 
+  <section class="classes" id="conte">
+    <article class="conte text-block">
+      <h2>Les contes de la tradition orale africaine</h2>
+      <p><strong class="not-bold">Le role du conte:</strong></p>
+      <p>Les contes de la tradition orale africaine constituent une source riche à l'éducation morale.
+        Lorsque l'on parle d'éducation, on pense spontanément à l'enfant. Or dans les contes africains, les enfants représentent la vie . Ils y représentent l'Homme.</p>
+      <p><strong class="not-bold">Les Objectifs de l'Atélier conte</strong> sont: l'affirmation de soi, le développement de l'oralité, l'apprentissage de la coordinnation du corps, 
+        de la voix et du regard, le développement de la mémoire, la découverte de l'émotion des mots pour forger la peronnalité, l'expression orale, la cohérence du récit, 
+        le developpement de la concentration et de l'écoute.</p>
+    </article>
+    <div>
+      <img src="resources/conte.jpg" alt="" class="classes-img">
+    </div>
+    <div class="text-block">
+    <p><h3 class="classes-title">Atélier de conte</h3></p>
+    <p>Djenkafo Art intervient sur demande dans des établissements scolaires, fêtes publiques et privés.</p>
+    <p>Pour plus d'informations, merci de <a href="/index.html#adress">nous contacter</a>.</p>
+  </div>
+  </section>
   </main>
   <div class="orange-line yellow-line"></div>
   <div class="red-line md-red-line"></div>  
