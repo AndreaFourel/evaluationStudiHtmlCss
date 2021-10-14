@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+<meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Djenkafo Art est une association culturelle et sociale qui propose des ateliers artistiques autour des traditions Africaines: percussions, danse, peinture, conte, théatre.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/bab83bcab2.js" crossorigin="anonymous"></script>
   <title>Nos cours et Atéliers</title>
 </head>
-<body>
+<body class="classes-body">
   <header id="header">
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
@@ -36,6 +38,12 @@
             <li class="nav-item">
               <a href="festival.html" class="nav-link">Le Festival</a>
             </li>
+            <li class="nav-item hidden-li">
+              <p></p>
+              <br>
+              <p></p>
+              <br>
+            </li>
           </ul>
         </div>
       </div>
@@ -44,24 +52,29 @@
     <div class="orange-line"></div>
   </header>
   <main>
-    <button class="up-btn">  
+    <button id="up-btn">  
       <a href="#header">
-        <img src="resources/curved-arrow.png" alt="" style="width:30px; height:30px" title="Retour au début de la page"> 
+        <img src="resources/curved-arrow.png" alt="image curved arrow" style="width:30px; height:30px" title="Retour au début de la page"> 
       </a>
     </button>
     <section class="title-block">
-      <div class="text-block">
+      <div class="text-block title-text-block">
         <h1 class="smaller-h1">Nos cours et atéliers</h1>
         <br>
         <p><strong class="not-bold">Djenkafo Art</strong> vous propose divers <strong class="not-bold">cours et atéliers autour des traditions africaines</strong>.</p> 
-        <p>Rejoignez-nous et decouvrez le <a href="#ngoni"><strong class="not-bold">n'goni</strong></a>, le<a href="#djembé"><strong class="not-bold"> djembé</strong></a>, 
-          la <a href="#danse-afric"><strong class="not-bold">danse africaine</strong></a>, le <a href="#bogolan"><strong class="not-bold">bogolan</strong></a> et les 
-          <a href="#conte"><strong class="not-bold">contes de la tradition orale africaine</strong></a>.</p>
+        <p>Rejoignez-nous et decouvrez le <a href="#ngoni"><strong>n'goni</strong></a>, le<a href="#djembé"><strong> djembé</strong></a>, 
+          la <a href="#danse-afric"><strong>danse africaine</strong></a>, le <a href="#bogolan"><strong>bogolan</strong></a> et les 
+          <a href="#conte"><strong>contes de la tradition orale africaine</strong></a>.</p>
       </div>
-      <div>
-        <img class="title-img" src="resources/Calebasse.jpeg" alt="">
+      <div class="title-img-block">
+        <img class="title-img" src="resources/Calebasse.jpeg" alt="image calebasse">
       </div>
     </section>
+    <div class="section-break">
+      <img src="resources/masque-africain (4).png" alt="image masque africain">
+      <img src="resources/tambour-africain (2).png" alt="image tambour africain">
+      <img src="resources/masque-africain (3).png" alt="image masque africain">
+    </div>
     <section class="classes" id="ngoni">
       <article class="text-block">
         <h2>Le N'Goni ou harpe-luth africaine</h2>
@@ -72,26 +85,34 @@
           tendues grâce à un système de tension fait d'un tressage de corde ou de peau ou grâce à des mécaniques modernes. Un chevalet repose 
           sur la peau. Cette alchimie donne le son si particulier du N’Goni, à la fois doux et feutré.</p>
       </article>
-      <div>
-        <img class="classes-img" src="resources/Ngoni.jpg" alt="">
+      <div class="classes-description">
+        <div class="ngoni-class-img">
+          <img class="classes-img" src="resources/Ngoni.jpg" alt="image instrument de musique n'goni">
+        </div>
+        <div class="text-block classes-text-block">
+          <h3 class="classes-title">Cours de N'goni</h3>
+          <ul>
+            <h4 class="classes-price">Tarif au cours:</h4>
+            <li>Cours Adulte: 20€/heure</li>
+            <li>Cours Enfant (- de 15 ans): 15€/heure</li>
+            <li>+ adhésion annuelle: 10€</li>
+          </ul>
+          <ul>
+            <h4 class="classes-price">Tarif à l'année (1 heure de cours par semaine):</h4>
+            <li>Adulte: 340€</li>
+            <li>Enfant (- de 15 ans): 250€</li>
+            <li>+ adhésion annuelle: 10€</li>
+          </ul>
+          <p>L'instrument est prêté pendant le cours, possibilité d'en acheter un.</p>
+        </div>
       </div>
-      <div class="text-block">
-        <h3 class="classes-title">Cours de N'goni</h3>
-        <ul>
-          <h4 class="classes-price">Tarif au cours:</h4>
-          <li>Cours Adulte: 20€/heure</li>
-          <li>Cours Enfant (- de 15 ans): 15€/heure</li>
-          <li>+ adhésion annuelle: 10€</li>
-        </ul>
-        <ul>
-          <h4 class="classes-price">Tarif à l'année (1 heure de cours par semaine):</h4>
-          <li>Adulte: 340€</li>
-          <li>Enfant (- de 15 ans): 250€</li>
-          <li>+ adhésion annuelle: 10€</li>
-        </ul>
-        <p>L'instrument est prêté pendant le cours, possibilité d'en acheter un.</p>
-      </div>
+ 
     </section>
+    <div class="section-break">
+      <img src="resources/masque-africain (4).png" alt="masque africain">
+      <img src="resources/tambour-africain (2).png" alt="tambour africain">
+      <img src="resources/masque-africain (3).png" alt="masque africain">
+    </div>
     <section class="classes" id="djembé">
       <article class="djembe text-block">
         <h2>Le Djembé</h2>
@@ -101,20 +122,28 @@
           ballets africains.</p>
         <p>Aujourd’hui, la pratique du djembé s’étend au monde entier.</p>
       </article>
-      <div>
-        <img class="classes-img" src="resources/djembé.jpg" alt="">
+      <div class="classes-description">
+        <div class="djembe-class-img">
+          <img class="classes-img" src="resources/djembé.jpg" alt="joueur de djembé">
+        </div>
+        <div class="text-block classes-text-block">
+          <h3 class="classes-title">Cours de djembé</h3>
+          <ul>
+            <p><em>Cours en collectif pour adultes et enfants les mardis de 18h15 à 19h15 au centre culturel des Carmes.</em></p>
+            <h4 class="classes-price">Tarif à l'année (1 heure de cours par semaine):</h4>
+            <li>Adulte et enfant: 221€</li>
+            <li>+ adhésion annuelle: 10€</li>
+          </ul>
+          <p>Les instruments sont prêtés pendant les cours, possibilité d'en acheter un.</p>
+        </div>
       </div>
-      <div class="text-block">
-        <h3 class="classes-title">Cours de djembé</h3>
-        <ul>
-          <p><em>Cours en collectif pour adultes et enfants les mardis de 18h15 à 19h15 au centre culturel des Carmes.</em></p>
-          <h4 class="classes-price">Tarif à l'année (1 heure de cours par semaine):</h4>
-          <li>Adulte et enfant: 221€</li>
-          <li>+ adhésion annuelle: 10€</li>
-        </ul>
-        <p>Les instruments sont prêtés pendant les cours, possibilité d'en acheter un.</p>
-      </div>
+      
     </section>
+    <div class="section-break">
+      <img src="resources/masque-africain (4).png" alt="image masque africain">
+      <img src="resources/tambour-africain (2).png" alt="image tambour africain">
+      <img src="resources/masque-africain (3).png" alt="image masque africain">
+    </div>
     <section class="classes" id="danse-afric">
       <article class="danse text-block">
         <h2>La danse africaine</h2>
@@ -125,9 +154,9 @@
           est un bon moyen pour éliminer le stress et de renforcer la confiance en soi.</p>
       </article>
       <div>
-        <img class="classes-img" src="resources/danse.jpg" alt="">
+        <img class="classes-img danse-class-img" src="resources/danse.jpg" alt="image pieds de danseur">
       </div>
-      <div class="text-block">
+      <div class="text-block classes-text-block">
         <h3 class="classes-title">Cours de danse africaine</h3>
         <ul>
           <p><em>Cours en collectif pour enfants les vendredis de 18h15 à 19h15 au centre culturel des Carmes.</em></p>
@@ -146,6 +175,11 @@
         <p>Les cours de danse africaine sont accopagnés par des musiciens professionnels et par les éléves du cours de djembé.</p>
       </div>
     </section>
+    <div class="section-break">
+      <img src="resources/masque-africain (4).png" alt="image masque africain">
+      <img src="resources/tambour-africain (2).png" alt="image tambour africain">
+      <img src="resources/masque-africain (3).png" alt="image masque africain">
+    </div>
     <section class="classes" id="bogolan">
       <article class="bogolan text-block">
         <h2>Le Bogolan</h2>
@@ -158,20 +192,28 @@
           pour des raisons purement esthétiques.</p>
         <p>De nos jours, le Bogolan s'est développé grâce à la réadaptation artistique de la pratique dans toute l'Afrique. Et maintenant, partout dans le monde.</p>
       </article>
-      <div>
-        <img class="classes-img" src="resources/Bogolan.jpeg" alt="">
+      <div class="classes-description">
+        <div class="bogolan-class-img">
+          <img class="classes-img" src="resources/Bogolan.jpeg" alt="image bogolan">
+        </div>
+        <div class="text-block classes-text-block">
+          <ul>
+            <h3 class="classes-title">Atelier de Bogolan</h3>
+            <p>Les ateliers sont organisés sur des séances de 6 semaines à raison de 2 heures de cours hebdomadaires.</p>
+            <h4 class="classes-price">Tarif pour les 6 semaines:</h4>
+            <li>Par personne: 120€</li>
+            <li>En famille,à partir de 2 personnes: 100€/personne</li>
+            <li>+ adhésion annuelle: 10€</li>
+          </ul>
+      </div> 
       </div>
-      <div class="text-block">
-        <ul>
-          <p><h3 class="classes-title">Atelier de Bogolan</h3></p>
-          <p>Les ateliers sont organisés sur des séances de 6 semaines à raison de 2 heures de cours hebdomadaires.</p>
-          <h4 class="classes-price">Tarif pour les 6 semaines:</h4>
-          <li>Par personne: 120€</li>
-          <li>En famille,à partir de 2 personnes: 100€/personne</li>
-          <li>+ adhésion annuelle: 10€</li>
-        </ul>
-    </div> 
+
   </section> 
+  <div class="section-break">
+    <img src="resources/masque-africain (4).png" alt="image masque africain">
+    <img src="resources/tambour-africain (2).png" alt="image tambour africain">
+    <img src="resources/masque-africain (3).png" alt="image masque africain">
+  </div>
   <section class="classes" id="conte">
     <article class="conte text-block">
       <h2>Les contes de la tradition orale africaine</h2>
@@ -182,14 +224,17 @@
         de la voix et du regard, le développement de la mémoire, la découverte de l'émotion des mots pour forger la peronnalité, l'expression orale, la cohérence du récit, 
         le developpement de la concentration et de l'écoute.</p>
     </article>
-    <div>
-      <img src="resources/conte.jpg" alt="" class="classes-img">
+    <div class="classes-description">
+      <div class="conte-class-img">
+        <img src="resources/conte.jpg" alt="image spectacle de conte" class="classes-img">
+      </div>
+      <div class="text-block classes-text-block">
+      <h3 class="classes-title">Atélier de conte</h3>
+      <p>Djenkafo Art intervient sur demande dans des établissements scolaires, fêtes publiques et privés.</p>
+      <p>Pour plus d'informations, merci de <a href="/index.html#adress">nous contacter</a>.</p>
     </div>
-    <div class="text-block">
-    <p><h3 class="classes-title">Atélier de conte</h3></p>
-    <p>Djenkafo Art intervient sur demande dans des établissements scolaires, fêtes publiques et privés.</p>
-    <p>Pour plus d'informations, merci de <a href="/index.html#adress">nous contacter</a>.</p>
-  </div>
+    </div>
+ 
   </section>
   </main>
   <div class="orange-line yellow-line"></div>
@@ -205,5 +250,6 @@
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="backToTopBtn.js"></script>
 </body>
 </html>
