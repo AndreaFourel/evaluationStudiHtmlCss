@@ -107,7 +107,8 @@ header {
 }
 
 .nav-link:hover{
-  color:#F0C929
+  color:#F0C929;
+  text-shadow: 0.6px 0.6px 0px black;
 }
 
 .fa-bars {
@@ -134,23 +135,19 @@ header {
 /*main*/
 
 #up-btn{
-  border: none;
-  width:50px;
-  height: 50px;
   position: fixed;
   bottom:15px;
   right:15px;
-  background:#F48B29;
-  box-shadow: 1px 1px 4px black;
-  border-radius: 50%;
+  color: #F48B29;
   display: none;
-  text-align: center;
+  background-color: #AC0D0D;
+  box-shadow: 1px 1px 2px black;
+  border-radius: 50%;
   z-index: 10;
 }
 
 #up-btn:hover{
-  width: 55px;
-  height: 55px;
+  box-shadow: 2px 2px 4px black;
 }
 
 section {
@@ -251,7 +248,7 @@ section {
 }
 
 .classes-price{
-   font-family: 'KoHo', sans-serif;
+  font-family: 'KoHo', sans-serif;
   font-size: 1.1em;
   font-weight: 600;
   text-decoration: underline;
@@ -261,6 +258,17 @@ section {
   width: 100%;
 }
 
+/*Main---Actualités*/
+
+.news-img{
+ width: 100%; 
+}
+
+.news-img-bg{
+  border: 4px solid #F0C929;
+  box-shadow: 2px 2px 4px black;
+}
+
 /*footer*/
 
 footer{
@@ -268,6 +276,7 @@ footer{
   margin: 0;
   padding: 1%;
 }
+
 .socials{
   display: flex;
   justify-content: center;
@@ -490,12 +499,13 @@ footer{
 
   .director-img{
     order:1;
-    background-image: url('resources/directeur.jpg');
+    background-image: url('resources/Alassane.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0 -70px;
     height: 300px;
   }
+  
   .map{
     display: block;
     align-self:baseline;
@@ -506,9 +516,9 @@ footer{
 
   .title-text-block{
     order:2;
-    margin-left: 2%;
+    margin-left: 1%;
     margin-top:7%;
-    flex:3;
+    flex:2;
   }
 
   .title-img{
@@ -547,7 +557,7 @@ footer{
     padding: 1%;
   }
 
-  .ngoni-class-img,.djembe-class-img,.bogolan-class-img,.conte-class-img{
+  .ngoni-class-img,.djembe-class-img,.bogolan-class-img,.conte-class-img,.afrodanse-class-img{
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 2px 2px 4px black;
@@ -564,7 +574,7 @@ footer{
   }
 
   .bogolan-class-img{
-    background-image: url('resources/bogolan2.jpg');
+    background-image: url('resources/bogolan.jpg');
     order:1;
   }
 
@@ -575,6 +585,20 @@ footer{
   .danse-class-img{
     display: block;
   }
+
+  .afrodanse-class-img{
+    background-image: url('resources/afro-danse.jpg')
+  }
+
+/*Main---Actualités*/  
+
+ .news-logo-txt{
+   opacity:0.5;
+ }
+
+ .news-img-bg{
+   border:unset;
+ }
 
 /*footer*/
 
