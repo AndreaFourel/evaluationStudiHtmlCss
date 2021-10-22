@@ -261,7 +261,8 @@ section {
 /*Main---Actualités*/
 
 .news-img{
- width: 100%; 
+ width: 100%;
+ box-shadow: 2px 2px 4px black; 
 }
 
 .news-img-bg{
@@ -269,6 +270,16 @@ section {
   box-shadow: 2px 2px 4px black;
 }
 
+/*Main---Festival*/
+
+.photo-carousel{
+  flex-direction: column;
+  background: #AC0D0D;
+}
+
+.festival-img{
+  box-shadow: 2px 2px 4px black;
+}
 /*footer*/
 
 footer{
@@ -504,11 +515,13 @@ footer{
     background-repeat: no-repeat;
     background-position: 0 -70px;
     height: 300px;
+    box-shadow: 2px 2px 4px black
   }
-  
+
   .map{
     display: block;
     align-self:baseline;
+    box-shadow: 2px 2px 4px black
   }
 
 
@@ -599,6 +612,14 @@ footer{
  .news-img-bg{
    border:unset;
  }
+
+ /*Main---Festival*/
+
+.photo-carousel{
+  background:#FBE6C2;
+}
+
+
 
 /*footer*/
 
