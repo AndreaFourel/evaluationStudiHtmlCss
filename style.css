@@ -277,9 +277,17 @@ section {
   background: #AC0D0D;
 }
 
+.carousel-header{
+  margin-bottom: 5%;
+  padding: 5% 2.5%;
+}
+
 .festival-img{
   box-shadow: 2px 2px 4px black;
 }
+
+
+
 /*footer*/
 
 footer{
@@ -618,7 +626,6 @@ footer{
 .photo-carousel{
   background:#FBE6C2;
 }
-
 
 
 /*footer*/
