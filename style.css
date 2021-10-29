@@ -10,6 +10,10 @@ a {
   font-weight:900;
 }
 
+a:hover{
+  color: #F48B29;
+}
+
 b{
   font-weight:900px;
   font-size: 1.2em;
@@ -46,6 +50,7 @@ body {
   max-width: 1400px;
   min-width: 360px;
   margin: auto;
+  box-shadow: 2px 2px 4px black;  
 }
 
 main{
@@ -152,6 +157,9 @@ header {
 
 section {
   margin-bottom: 5%;
+}
+
+.title-block,.objectifs{
   background-image: url('resources/decor.png');
   background-position: right;
 }
@@ -260,7 +268,7 @@ section {
 
 /*Main---Actualités*/
 
-.news-img{
+.news-img,.festival-top-img,.festival-top-img-bis{
  width: 100%;
  box-shadow: 2px 2px 4px black; 
 }
@@ -278,15 +286,17 @@ section {
 }
 
 .carousel-header{
-  margin-bottom: 5%;
-  padding: 5% 2.5%;
+  margin-bottom: 1%;
+  padding: 3% 2.5%;
 }
 
 .festival-img{
   box-shadow: 2px 2px 4px black;
 }
 
-
+.festival-top-img-bis{
+  display: none;
+}
 
 /*footer*/
 
@@ -386,9 +396,8 @@ footer{
     border-radius: 15px;
   }
 
-  .title-block{
-    background-image: url('resources/decor.png');
-    background-position: left;
+  .objectifs{
+    background-image: none;
   }
 
   .large-bottom-padding{
@@ -614,11 +623,16 @@ footer{
 /*Main---Actualités*/  
 
  .news-logo-txt{
+   font-size: 0.7em;
    opacity:0.5;
  }
 
  .news-img-bg{
    border:unset;
+ }
+
+ .news-img{
+   width: ;
  }
 
  /*Main---Festival*/
@@ -645,5 +659,57 @@ footer{
     height: 6px;
   }
 
+}
+
+@media screen and (min-width:900px) {
+  .djembe-class-img{
+    background-position-y: 70%;
+  }
+
+  .bogolan-class-img{
+    background-position-y: 70%;
+  }
   
+  .festival-top-img-bis{
+    display: block;
+  }
+
+  .festival-top-img{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px){
+
+  .presentation-text-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .nav-link {
+    font-size: 1.4em;
+ 
+  }
+
+  .logo{
+    width: 150px;
+    height: 150px
+ }
+
+ .logo-txt{
+   font-size: 2.2em;
+   text-shadow: 2px 2px 1px black;
+ }
+
+ .title-block{
+  background-image: url('resources/decor.png');
+  background-position:calc(100% + 50px);
+  background-repeat: no-repeat;
+  }
+
+  .news-logo-txt{
+    font-size: 1em;
+  }
+
 }
