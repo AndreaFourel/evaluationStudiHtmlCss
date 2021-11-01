@@ -36,6 +36,7 @@ function runCarousel (){
 }
 
 
+// lazyload for all img tags
 
 //   const images = document.querySelectorAll('img');
 
