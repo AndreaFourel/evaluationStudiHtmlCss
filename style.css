@@ -5,9 +5,9 @@
 }
 
 a {
-  text-decoration: none;
   color: #F0C929;
   font-weight:900;
+  text-decoration: none;
 }
 
 a:hover{
@@ -19,51 +19,50 @@ b{
   font-size: 1.2em;
 }
 
-h1{
-  font-family: 'KoHo', sans-serif;
-  color:#F48B29;
-  font-size: 2.2em;
-  margin: 0;
+body {
+  background-color:#FBE6C2;
+  box-shadow: 2px 2px 4px black; 
+  font-family:'Krub', sans-serif;
+  line-height: 1em;
+  margin: 0 auto;
+  max-width: 1400px;
+  min-width: 360px; 
+  padding: 0;
 }
 
 .da-subtitle {
   color: #F0C929;
 }
 
-h2, h3 {
+h1{
+  color:#F48B29;
   font-family: 'KoHo', sans-serif;
-  margin-bottom: 1.2em;
+  font-size: 2.2em;
+  margin: 0;
+}
+
+h2, h3 {
   color:#F0C929;
+  font-family: 'KoHo', sans-serif;
   font-size: 1.8em;
+  margin-bottom: 1.2em;
 }
 
 html {
   background-color: #FBE6C2;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  line-height: 1em;
-  background-color:#FBE6C2;
-  font-family:'Krub', sans-serif;
-  max-width: 1400px;
-  min-width: 360px;
-  margin: auto;
-  box-shadow: 2px 2px 4px black;  
-}
-
 main{
   margin-bottom: -5%;
+}
+
+.not-bold{
+  font-weight: 400;
 }
 
 ul {
   list-style: none;
   padding-left: 0;
-}
-
-.not-bold{
-  font-weight: 400;
 }
 
 /*header*/
@@ -74,51 +73,55 @@ header {
 
 .logo{
   border-radius: 50%;
-  width: 130px;
+  box-shadow: 2px 2px 4px black; 
   height: 130px;
-  box-shadow: 2px 2px 4px black;  
+  width: 130px; 
 }
 
 .logo-txt {
+  color: #AC0D0D;
   font-family: 'KoHo', sans-serif;
   font-weight: bold;
   font-size: 1.5em;
-  color: #AC0D0D;
   line-height: 1.2em;
   text-shadow: 1px 1px 1px black;
 }
 
 .orange-line{
-  width: 100%;
-  height: 7px;
   background-color:#F48B29;
+  height: 7px;
+  width: 100%;
 }
 
 .red-line {
-  width: 100%;
-  height: 5px;
   background-color: #AC0D0D;
+  height: 5px;
+  width: 100%;
 }
 
 /*header menu*/
 
+.fa-bars {
+  background-color: #F48B29;
+  color: #AC0D0D;
+}
+
+.hidden-li {
+  display: none;
+}
+
 .nav-link {
   color: #AC0D0D;
-  margin: 0.5em;
-  padding: 0.5em;
   font-family: 'KoHo', sans-serif;
   font-size: 1.2em;
+  margin: 0.5em;
+  padding: 0.5em;
   text-shadow: 0.2px 0.2px 0px black;
 }
 
 .nav-link:hover{
   color:#F0C929;
   text-shadow: 0.6px 0.6px 0px black;
-}
-
-.fa-bars {
-  color: #AC0D0D;
-  background-color: #F48B29;
 }
 
 .navbar-toggler{
@@ -133,21 +136,17 @@ header {
   color:#F0C929;
 }
 
-.hidden-li {
-  display: none;
-}
-
-/*main*/
+/*up button*/
 
 #up-btn{
+  background-color: #AC0D0D;
+  border-radius: 50%;
+  box-shadow: 1px 1px 2px black;
+  color: #F48B29;
+  display: none;
   position: fixed;
   bottom:15px;
   right:15px;
-  color: #F48B29;
-  display: none;
-  background-color: #AC0D0D;
-  box-shadow: 1px 1px 2px black;
-  border-radius: 50%;
   z-index: 10;
 }
 
@@ -155,8 +154,18 @@ header {
   box-shadow: 2px 2px 4px black;
 }
 
+/*main*/
+
+.map{
+  display: none;
+}
+
 section {
   margin-bottom: 5%;
+}
+
+.section-break{
+  display:none;
 }
 
 .title-block,.objectifs{
@@ -164,18 +173,32 @@ section {
   background-position: right;
 }
 
-.section-break{
-  display:none;
+.top-margin {
+  margin-top: 38%;
 }
 
+.text-block {
+  background-color: #AC0D0D;
+  box-shadow: 2px 2px 4px black;
+  color:#FBE6C2;
+  font-size: 1em;
+  font-weight:400;
+  line-height: 1.7em;
+  margin-bottom: 5%;
+  padding: 5% 2.5%;
+  text-align: left;
+}
+
+/*main---images*/
+
 .absolute-img-1 {
-  position:absolute;
-  top: 50%;
-  left: 15%;
-  width: 85%;
-  z-index: 1;
   border-radius: 50% 0 0 0;
   box-shadow: 2px 2px 4px black;
+  position:absolute;
+  left: 15%;
+  top: 50%;
+  width: 85%;
+  z-index: 1;
 }
 
 .absolute-img-2 {
@@ -184,9 +207,9 @@ section {
   width: 60%;
 }
 
-.img-1 {
-  width: 40%;
+.director-image{
   box-shadow: 2px 2px 4px black;
+  width:100%;
 }
 
 .dual-img{
@@ -194,61 +217,33 @@ section {
   margin: 1%;
 }
 
-.presentation-img {
-  display: block;
-  margin: auto;
-  border-radius: 50% 50% 0 0;
-  width: 60%;
-  box-shadow:2px 2px 4px black;
-}
-
 .fond {
-  padding: 2%;
   background-image: url('resources/fond.png');
   background-size: cover;
   box-shadow: 2px 2px 4px black;
+  padding: 2%;
 }
 
-.director-image{
-  width:100%;
+.img-1 {
   box-shadow: 2px 2px 4px black;
+  width: 40%;
 }
 
-.top-margin {
-  margin-top: 38%;
+.presentation-img {
+  border-radius: 50% 50% 0 0;
+  box-shadow:2px 2px 4px black;
+  display: block;
+  margin: auto;
+  width: 60%;
 }
 
-.text-block {
-  font-size: 1em;
-  font-weight:400;
-  line-height: 1.7em;
-  background-color: #AC0D0D;
-  color:#FBE6C2;
-  margin-bottom: 5%;
-  padding: 5% 2.5%;
-  box-shadow: 2px 2px 4px black;
-  text-align: left;
-}
-
-.map{
-  display: none;
-}
 
 /*Main---Nos cours et atéliers*/
 
-.smaller-h1{
-  font-size: 1.8em;
-}
-
-.title-img{
-  box-shadow: 2px 2px 4px black;
-  width: 100%;
-}
-
 .classes-img{
   box-shadow: 2px 2px 4px black;
-  width: 100%;
   margin-bottom: 4%;
+  width: 100%;
 }
 
 .classes-title{
@@ -262,15 +257,20 @@ section {
   text-decoration: underline;
 }
 
-.classes-img{
+.smaller-h1{
+  font-size: 1.8em;
+}
+
+.title-img{
+  box-shadow: 2px 2px 4px black;
   width: 100%;
 }
 
 /*Main---Actualités*/
 
 .news-img,.festival-top-img,.festival-top-img-bis{
- width: 100%;
- box-shadow: 2px 2px 4px black; 
+  box-shadow: 2px 2px 4px black; 
+  width: 100%;
 }
 
 .news-img-bg{
@@ -279,11 +279,6 @@ section {
 }
 
 /*Main---Festival*/
-
-.photo-carousel{
-  flex-direction: column;
-  background: #AC0D0D;
-}
 
 .carousel-header{
   margin-bottom: 1%;
@@ -298,7 +293,20 @@ section {
   display: none;
 }
 
+.photo-carousel{
+  background: #AC0D0D;
+  flex-direction: column;
+}
+
 /*footer*/
+
+.copyright{
+  color: #AC0D0D;
+  font-size: 0.9em;
+  text-align: center;
+  margin: 2%;
+  padding: 1%;
+}
 
 footer{
   background:#F48B29;
@@ -317,19 +325,10 @@ footer{
   padding:1%;
 }
 
-.copyright{
-  text-align: center;
-  color: #AC0D0D;
-  margin: 2%;
-  padding: 1%;
-  font-size: 0.9em;
-}
-
-
-
 /*media queries*/
 
 @media screen and (min-width: 768px) {
+
   body{
     background: linear-gradient(#F48B29 250px, #AC0D0D 250px 255px, #F0C929 255px 262px, #AC0D0D 262px);
     position:relative;
@@ -345,13 +344,17 @@ footer{
     z-index: -1;
   }
 
-  .logo, .logo-txt,.navbar-toggler,.navbar-collapse{
+  .hidden-li {
+    display: block;
+  }
+
+  .logo,.logo-txt,.navbar-toggler,.navbar-collapse{
     z-index: 1;
   }
 
   .logo{
+    height: 150px;
     width: 150px;
-    height: 150px
  }
 
  .logo-txt{
@@ -359,158 +362,14 @@ footer{
    text-shadow: 2px 2px 1px black;
  }
 
- .hidden-li {
-   display: block;
- }
-
-  .red-line{
-    display:none;
-  }
-
-  .orange-line{
+  .red-line,.orange-line{
     display:none;
   }
 
   /*main*/
 
-    main{
-    width: 90%;
-    margin:auto;
-    height: 120%;
-    position: relative;
-    bottom: 70px;
-  }
-
-  h1,h2,h3{
-    color: #AC0D0D;
-  }
-
-  section{
-    background: #FBE6C2;
-    margin: unset;
-    display: flex;
-    justify-content: space-between;
-    padding: 3%;
-    font-size: 1.2em;
-    box-shadow: 2px 2px 4px black;
-    border-radius: 15px;
-  }
-
-  .objectifs{
-    background-image: none;
-  }
-
-  .large-bottom-padding{
-    padding-bottom: 15%;
-  }
-
-  .section-break{
-    font-size: 2em;
-    display:flex;
-    width:90px;
-    height:40px;
-    margin: auto;
-    margin-top:1%;
-    margin-bottom:1%;
-  }
-
-  .title-block>.md-text-block{
-    order:2;
-    flex:2;
-    font-size: 1.2em;
-    padding: 5% 0 0 5%;
-    margin: 7% 0 0 5%;
-  }
-
   .da-subtitle{
     color:#F48B29
-  }
-
-  .text-block{
-    background:unset;
-    box-shadow: unset;
-    font-weight: 500;
-    line-height: 2em;
-    color: #682C0E;
-    margin: unset;
-    padding:2% 1%
-  }
-
-  .not-bold{
-    font-weight: 500;
-  }
-
-  .presentation-text-block{
-    flex:2;
-  }
-
-  .objectifs{
-    flex-direction: column;
-  }
-
-  .title-dual-img{
-    order:1;
-    flex:3;
-    margin-top: 7%;
-    margin-left: unset;
-    max-width: 600px;
-  }
-
-  .img-1{
-    position: relative;
-    width:50%;
-    z-index:1;
-  }
-
-  .absolute-img-1{
-    width:100%;
-    top:40%;
-    left:5%;
-  }
-
-  .top-margin{
-    margin:unset;
-  }
-
-  .fond{
-    align-self: stretch;
-    flex:2;
-    display: flex;
-    border-radius: 40% 0;
-    margin-left: 1%;
-  }
-
-  .presentation-img{
-    min-width: 230px;
-  }
-
-  ul>br{
-    display: none;
-  }
-
-  .objectifs-image>.img-1{
-  width: 30%;
-  }
-
-  .objectifs-image>.absolute-img-1{
-    position:static;
-    width:65%;
-    border-radius: 0;
-  }
-
-  .objectifs-image{
-    margin:0;
-    display:flex;
-    justify-content: space-between;
-    z-index: 1;
-  }
-
-  .objectifs-image>.absolute-img-2{
-    display: block;
-    position: absolute;
-    left: 18.5%;
-    width:49%;
-    z-index: 0;
   }
 
   .director{
@@ -521,54 +380,160 @@ footer{
     order:2;
   }
 
+  h1,h2,h3{
+    color: #AC0D0D;
+  }
+
+  .large-bottom-padding{
+    padding-bottom: 15%;
+  }
+
+  main{
+    margin:auto;
+    height: 120%;
+    position: relative;
+    bottom: 70px;
+    width: 90%;
+  }
+
+  .not-bold{
+    font-weight: 500;
+  }
+
+  .objectifs{
+    background-image: none;
+    flex-direction: column;
+  }
+
+  .presentation-text-block{
+    flex:2;
+  }
+
+  section{
+    background: #FBE6C2;
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px black;
+    display: flex;
+    font-size: 1.2em;
+    justify-content: space-between;  
+    margin: unset;
+    padding: 3%;
+  }
+
+  .section-break{
+    display: flex;
+    font-size: 2em;
+    height: 40px;
+    margin: 1% auto;
+    width: 90px;
+  }
+
+  .title-block>.md-text-block{
+    flex: 2;
+    font-size: 1.2em;
+    margin: 7% 0 0 5%;
+    order: 2;
+    padding: 5% 0 0 5%;
+  }
+
+  .text-block{
+    background: unset;
+    box-shadow: unset;
+    color: #682C0E;
+    font-weight: 500;
+    line-height: 2em;
+    margin: unset;
+    padding: 2% 1%
+  }
+
+  .top-margin{
+    margin:unset;
+  }
+
+  ul>br{
+    display: none;
+  }
+
+/*main---images*/
+
+  .absolute-img-1{
+    width:100%;
+    left:5%;
+    top:40%;
+  }
+
   .director-image{
     display: none;
   }
 
   .director-img{
-    order:1;
     background-image: url('resources/Alassane.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0 -70px;
+    box-shadow: 2px 2px 4px black;
     height: 300px;
-    box-shadow: 2px 2px 4px black
+    order:1;
+  }
+
+  .fond{
+    align-self: stretch;
+    border-radius: 40% 0;
+    display: flex;
+    flex:2;
+    margin-left: 1%;
+  }
+
+  .img-1{
+    position: relative;
+    width:50%;
+    z-index:1;
   }
 
   .map{
-    display: block;
     align-self:baseline;
-    box-shadow: 2px 2px 4px black
+    box-shadow: 2px 2px 4px black;
+    display: block;
   }
 
+  .objectifs-image{
+    display:flex;
+    justify-content: space-between;
+    margin:0;
+    z-index: 1;
+  }
+
+  .objectifs-image>.img-1{
+    width: 30%;
+  }
+
+  .objectifs-image>.absolute-img-1{
+    border-radius: 0;
+    position: static;
+    width: 65%;
+  }
+
+  .objectifs-image>.absolute-img-2{
+    display: block;
+    position: absolute;
+    left: 18.5%;
+    width: 49%;
+    z-index: 0;
+  }
+
+  .presentation-img{
+    min-width: 230px;
+  }
+
+  .title-dual-img{
+    flex: 3;
+    order: 1;
+    margin-top: 7%;
+    margin-left: unset;
+    max-width: 600px;
+  }
 
 /*Main---Nos cours et atéliers*/
-
-  .title-text-block{
-    order:2;
-    margin-left: 1%;
-    margin-top:7%;
-    flex:2;
-  }
-
-  .title-img{
-    display:none;
-  }
-
-  .classes-img{
-    display: none;
-  }
-
-  .title-img-block{
-    background-image: url('resources/Calebasse.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    order:1;
-    margin-top:7%;
-    padding-top: 7%;
-    box-shadow: 2px 2px 4px black;
-    flex:2;
-  }
 
   .classes{
     flex-direction: column;
@@ -586,21 +551,18 @@ footer{
     margin: 1%;
     padding: 1%;
   }
-
-  .ngoni-class-img,.djembe-class-img,.bogolan-class-img,.conte-class-img,.afrodanse-class-img{
-    background-size: cover;
-    background-repeat: no-repeat;
-    box-shadow: 2px 2px 4px black;
-    flex:1;
+ 
+  .title-text-block{
+    flex: 2;
+    margin-left: 1%;
+    margin-top: 7%;
+    order: 2;
   }
 
-  .ngoni-class-img{
-    background-image: url('resources/Ngoni.jpg');
-    order:1;
-  }
+/*Main---Nos cours et atéliers---images*/
 
-  .djembe-class-img{
-    background-image: url('resources/djembé.jpg');
+  .afrodanse-class-img{
+    background-image: url('resources/afro-danse.jpg')
   }
 
   .bogolan-class-img{
@@ -612,61 +574,78 @@ footer{
     background-image: url('resources/conte.jpg');
   }
 
+  .classes-img,.title-img {
+    display: none;
+  }
+
   .danse-class-img{
     display: block;
   }
 
-  .afrodanse-class-img{
-    background-image: url('resources/afro-danse.jpg')
+  .djembe-class-img{
+    background-image: url('resources/djembé.jpg');
+  }
+
+  .ngoni-class-img{
+    background-image: url('resources/Ngoni.jpg');
+    order:1;
+  }
+
+  .ngoni-class-img,.djembe-class-img,.bogolan-class-img,.conte-class-img,.afrodanse-class-img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 4px black;
+    flex:1;
+  }
+
+  .title-img-block{
+    background-image: url('resources/Calebasse.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 4px black;
+    flex: 2;
+    margin-top: 7%;
+    order: 1;
+    padding-top: 7%;
   }
 
 /*Main---Actualités*/  
 
- .news-logo-txt{
-   font-size: 0.7em;
-   opacity:0.5;
- }
+  .news-img-bg{
+    border:unset;
+  }
 
- .news-img-bg{
-   border:unset;
- }
+  .news-logo-txt{
+    font-size: 0.7em;
+    opacity:0.5;
+  }
 
- .news-img{
-   width: ;
- }
+/*Main---Festival*/
 
- /*Main---Festival*/
-
-.photo-carousel{
-  background:#FBE6C2;
-}
-
+  .photo-carousel{
+    background:#FBE6C2;
+  }
 
 /*footer*/
+
+  .md-red-line,.yellow-line{
+    display: block;
+    height: 6px;
+  }
 
   .socials>.social-link{
     font-size: x-large;
   }
 
   .yellow-line{
-    display: block;
     background-color: #F0C929;
-    height: 6px;
-  }
-
-  .md-red-line{
-    display: block;
-    height: 6px;
   }
 
 }
 
 @media screen and (min-width:900px) {
-  .djembe-class-img{
-    background-position-y: 70%;
-  }
 
-  .bogolan-class-img{
+  .djembe-class-img,.bogolan-class-img{
     background-position-y: 70%;
   }
   
@@ -681,17 +660,6 @@ footer{
 
 @media screen and (min-width: 1200px){
 
-  .presentation-text-block{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .nav-link {
-    font-size: 1.4em;
- 
-  }
-
   .logo{
     width: 150px;
     height: 150px
@@ -702,14 +670,24 @@ footer{
    text-shadow: 2px 2px 1px black;
  }
 
- .title-block{
-  background-image: url('resources/decor.png');
-  background-position:calc(100% + 50px);
-  background-repeat: no-repeat;
+  .nav-link {
+    font-size: 1.4em;
   }
 
   .news-logo-txt{
     font-size: 1em;
   }
+
+  .presentation-text-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .title-block{
+    background-image: url('resources/decor.png');
+    background-position:calc(100% + 50px);
+    background-repeat: no-repeat;
+    }
 
 }
