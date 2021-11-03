@@ -300,6 +300,16 @@ section {
 
 /*footer*/
 
+.af-link{
+  color: #AC0D0D;
+  font-weight: 500;
+}
+
+.af-link:hover{
+  color: #AC0D0D;
+  font-weight: 800;
+}
+
 .copyright{
   color: #AC0D0D;
   font-size: 0.9em;
@@ -580,6 +590,7 @@ footer{
 
   .crea-artisanale-class-img{
     background-image: url('resources/crea-artisanale.jpg');
+    background-position-x: 100%;
   }
 
   .danse-class-img{
@@ -649,7 +660,7 @@ footer{
 
 @media screen and (min-width:900px) {
 
-  .djembe-class-img,.bogolan-class-img,.crea-artisanale-class-img{
+  .djembe-class-img,.bogolan-class-img{
     background-position-y: 70%;
   }
   
