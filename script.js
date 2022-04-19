@@ -21,7 +21,7 @@ function scrollFunction () {
 runCarousel();
 
 function runCarousel (){
-  var myCarousel = document.getElementById('festival-carousel');
+  let myCarousel = document.getElementById('festival-carousel');
 
   myCarousel.addEventListener('slide.bs.carousel', function (e) {
 

@@ -268,7 +268,7 @@ section {
 
 /*Main---Actualités*/
 
-.news-img,.festival-top-img,.festival-top-img-bis{
+.news-img,.news-top-img,.festival-top-img,.festival-top-img-bis{
   box-shadow: 2px 2px 4px black; 
   width: 100%;
 }
@@ -279,6 +279,25 @@ section {
 }
 
 /*Main---Festival*/
+
+.program-title {
+  color:#F48B29;
+  font-family:'Krub', sans-serif;
+  font-size: 2em;
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
+  border: solid;
+  /* border-bottom: solid #AC0D0D; */
+  box-shadow: 2px 2px 4px black;
+  text-align: center;
+}
+
+h4 {
+  color:#F0C929;
+  font-family:'KoHo', sans-serif;
+  font-size: 1.3em;
+  margin-bottom: 0.5em;
+  }
 
 .carousel-header{
   margin-bottom: 1%;
@@ -297,6 +316,16 @@ section {
   background: #AC0D0D;
   flex-direction: column;
 }
+
+.program-img{
+  box-shadow: 2px 2px 4px black;
+  width: 100%;
+}
+
+.program-section,.program-section-reverse{
+  margin-bottom: 7%;
+}
+
 
 /*footer*/
 
@@ -342,6 +371,7 @@ footer{
   body{
     background: linear-gradient(#F48B29 250px, #AC0D0D 250px 255px, #F0C929 255px 262px, #AC0D0D 262px);
     position:relative;
+    height: 100%;
   }
 
   /*header&menu*/
@@ -627,7 +657,7 @@ footer{
 /*Main---Actualités*/  
 
   .news-img-bg{
-    border:unset;
+    border: unset;
   }
 
   .news-logo-txt{
@@ -637,8 +667,28 @@ footer{
 
 /*Main---Festival*/
 
+  h4 {
+  color:#AC0D0D;
+  }
+
   .photo-carousel{
     background:#FBE6C2;
+  }
+  
+ 
+  .program-img-div {
+    display: flex;
+    justify-content: center;
+  }
+
+  .program-img{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .program-img-lg {
+    height: 480px;
   }
 
 /*footer*/
@@ -670,6 +720,33 @@ footer{
 
   .festival-top-img{
     display: none;
+  }
+
+}
+
+@media screen and (min-width: 1140px){
+
+  .program-section{
+    display: flex;
+    margin-bottom: 5%;
+  }
+
+  .program-section-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .program-img-div {
+    margin: 2%;
+  }
+
+  .program-img{
+    width: 400px;
+    height: 300px;
+  }
+
+  .program-img-lg {
+    height: 600px;
   }
 
 }
