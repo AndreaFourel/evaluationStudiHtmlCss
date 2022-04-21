@@ -268,15 +268,15 @@ section {
 
 /*Main---Actualités*/
 
-.news-img,.news-top-img,.festival-top-img,.festival-top-img-bis{
+.news-top-img,.festival-top-img,.festival-top-img-bis{
   box-shadow: 2px 2px 4px black; 
   width: 100%;
 }
 
-.news-img-bg{
+/* .news-img-bg{
   border: 4px solid #F0C929;
   box-shadow: 2px 2px 4px black;
-}
+} */
 
 /*Main---Festival*/
 
@@ -656,14 +656,15 @@ footer{
 
 /*Main---Actualités*/  
 
-  .news-img-bg{
+  /* .news-img-bg{
     border: unset;
-  }
+  } */
 
   .news-logo-txt{
     font-size: 0.7em;
     opacity:0.5;
   }
+
 
 /*Main---Festival*/
 
