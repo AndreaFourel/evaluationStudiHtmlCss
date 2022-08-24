@@ -602,7 +602,8 @@ footer{
 /*Main---Nos cours et atéliers---images*/
 
   .afrodanse-class-img{
-    background-image: url('resources/afro-danse.jpg')
+    background-image: url('resources/afro-danse.jpg');
+    background-position-x: 50%;
   }
 
   .bogolan-class-img{
