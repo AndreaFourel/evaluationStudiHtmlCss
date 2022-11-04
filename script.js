@@ -1,5 +1,4 @@
 //back to top button
-
 let myButton = document.getElementById('up-btn');
 
 window.onscroll = () => {
@@ -22,19 +21,18 @@ runCarousel();
 
 function runCarousel (){
   let myCarousel = document.getElementById('festival-carousel');
-
-  myCarousel.addEventListener('slide.bs.carousel', function (e) {
-
+  if(myCarousel){
+    myCarousel.addEventListener('slide.bs.carousel', function (e) {
       let image = e.relatedTarget.querySelector('img');
-
       if(!image.hasAttribute('src')){
         let url = image.getAttribute('data-src');
         image.setAttribute('src', url);
         image.removeAttribute('data-src');
       }   
-})
-}
+    }, {passive: true})
+  }
 
+}
 
 // lazyload for all img tags
 
@@ -55,4 +53,4 @@ function runCarousel (){
 // images.forEach((image) => {
 //   observer.observe(image);
 // });
-
+document.cookie = "AC-C=ac-c;expires=Fri, 31 Dec 9999 23:59:59 GMT;path=/;SameSite=None; Secure";
