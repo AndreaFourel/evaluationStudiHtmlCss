@@ -685,7 +685,7 @@ footer{
 
   .program-img{
     width: 400px;
-    height: 300px;
+    height: auto;
     object-fit: cover;
   }
 
@@ -741,12 +741,7 @@ footer{
   .program-img-div {
     margin: 2%;
   }
-
-  .program-img{
-    width: 400px;
-    height: 300px;
-  }
-
+  
   .program-img-lg {
     height: 600px;
   }
